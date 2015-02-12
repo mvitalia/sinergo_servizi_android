@@ -1,0 +1,201 @@
+/* app css stylesheet */
+body { padding-top: 50px;font-size: 20pt;width:100%;background-color:#B4B4B4;color:#000}
+.navbar-fixed-top, .navbar-fixed-bottom {width:100%;}
+.container {text-align:center;width: 100%;}
+.logo {width:60%;}
+.navbar-inverse {background-color:#750101}
+.navbar-inverse .navbar-brand,.navbar-fixed-bottom,.navbar-fixed-bottom * {color:#fff;}
+.navbar-fixed-bottom {line-height:44px;}
+
+.btn-primary{background-color:#750101;border-color:#750101}
+
+a {color:#000}
+a:hover,a:focus {color:#750101;text-decoration:none}
+.navbar-fixed-bottom,.navbar-fixed-bottom * {
+ font-size: 78%;
+}
+#imgbox {width:100%;height:250px;margin-top:20px;background-color:#B4B4B4}
+
+.container .btn_iscri_corsi {
+	background-color:#999;
+    border: 1px solid #ccc;
+    box-shadow: 0 14px 23px #ccc inset;
+	width:50%;
+    padding:15px;
+	color:#750101;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: none 0s ease 0s ;
+}
+
+@media screen and (max-device-width: 480px) {
+  #imgbox {height:250px;}
+	  .btn_menu {height:125px;line-height:125px;font-size:20pt}
+
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+  #imgbox {height:250px;}
+	  .btn_menu {height:125px;line-height:125px;font-size:20pt}
+
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px){
+  #imgbox {height:250px;}
+    .btn_menu {height:125px;line-height:125px;font-size:20pt}
+
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2){
+  #imgbox {height:250px;}
+  .navbar-fixed-bottom,.navbar-fixed-bottom * {font-size:100%}
+  .btn_menu {height:125px;line-height:125px;font-size:20pt}
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 720px) {
+  #imgbox {height:370px !important;}
+  .navbar-fixed-bottom,.navbar-fixed-bottom * {font-size:100% !important}
+  .btn_menu {height:250px !important;line-height:250px !important;font-size:30pt !important}
+
+}
+
+
+
+header {
+ width: 100%;
+}
+ 
+#main {
+ width: 100%;
+}
+ 
+article {
+ width: 100%;
+}
+ 
+#ricerca input[type=text] {
+ width: 60%;
+}
+ 
+footer {
+ width: 100%;
+}
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+.menu:before {
+    content: "[";
+}
+.menu:after {
+    content: "]";
+}
+.menu > li {
+    display: inline;
+}
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+.btn_menu {width:50%;height:125px;line-height:125px;text-align:center;border:1px solid #ccc;float:left;font-size:100%;
+	box-shadow:-3px 26px 54px #ccc inset;font-weight:bold; background-color:#fcfcfc;color:#000
+}
+#articles .post {
+    display: block;
+    height: 70px;
+	box-shadow: 0px 14px 23px #ccc inset;
+    position: relative;
+    overflow: hidden;
+    transition: none;
+	background-color:#fcfcfc;
+	border:1px solid #ccc;
+	text-align:left;
+}
+/* Slide animation */
+/*
+.view-animate-container {
+    position: relative;
+    margin-top: 60px;
+}
+.slide {
+    position: relative;
+}
+.slide.ng-leave,
+.slide.ng-enter {
+    -webkit-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+    -moz-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+    -ms-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+    -o-transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+    transition: all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.1s;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.slide.left.ng-enter,
+.slide.right.ng-leave.ng-leave-active {
+    left: 100%;
+    opacity: 0;
+}
+.slide.left.ng-enter.ng-enter-active,
+.slide.left.ng-leave,
+.slide.right.ng-enter.ng-enter-active,
+.slide.right.ng-leave {
+    left: 0;
+    opacity: 1;
+}
+.slide.left.ng-leave.ng-leave-active,
+.slide.right.ng-enter {
+    left: -100%;
+    opacity: 0;
+}
+.view {
+    width: 500px;
+    height: 300px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+*/
+
+
+/* Masonry */
+
+.masonry-brick {
+    display: none;
+    width: 25%;
+}
+.masonry-brick.loaded {
+    display: block;
+}
+/* Custom Style */
+
+.view-animate-container {margin:0 0 50px;padding:0;width:100%;float:left;top:50%;}
+#articles { transition: none;margin-top:30px; }
+
+#articles .post img {height:260px}
+#articles .post .caption {
+	width:100%;
+    padding: 15px;
+}
+.caption_left {padding-left:15px}
+.controls {position:relative}
+#articles .post .caption h3 {padding:0;margin:0;}
+#articles .post .article_title {display:block !important;font-size:100%;}
+#articles .post .ng-binding {display:none}
+.page img {width:99%}
+.btn_leggi {position:absolute;right:8px;top:8px;}
+
